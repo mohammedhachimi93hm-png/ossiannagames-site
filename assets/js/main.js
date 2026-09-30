@@ -27,7 +27,7 @@
     return String(name).split(/\s+/).filter(Boolean).slice(0, 2).map(function (w) { return w[0]; }).join("").toUpperCase();
   }
 
-  var PALETTE = ["#8b5cf6", "#ec4899", "#f59e0b", "#06b6d4", "#10b981", "#f43f5e", "#6366f1"];
+  var PALETTE = ["#ef4444", "#f59e0b", "#22c55e", "#ec4899", "#3b82f6", "#8b5cf6"];
   var AMAZON_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 14H5L4 7h3zm2 0h6V6a3 3 0 0 0-6 0v1z"/></svg>';
 
   /* ---------- global bits ---------- */
@@ -101,7 +101,7 @@
   }
 
   function mysteryCards() {
-    var colors = ["#8b5cf6", "#ec4899", "#f59e0b"];
+    var colors = ["#ef4444", "#f59e0b", "#22c55e"];
     return colors.map(function (c, i) {
       return (
         '<article class="game-card mystery reveal" style="--accent:' + c + '" aria-hidden="true">' +
