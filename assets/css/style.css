@@ -359,7 +359,8 @@ dialog.modal::backdrop { background: rgba(28, 21, 48, .55); -webkit-backdrop-fil
 .modal-body h3 { font-size: 2rem; margin: 0 0 8px; }
 .modal-body .desc p { color: #2e2743; margin: 0 0 12px; }
 .shots { display: flex; gap: 12px; overflow-x: auto; padding: 6px 0 14px; margin: 8px 0 10px; scroll-snap-type: x mandatory; }
-.shots img { height: 190px; width: auto; border-radius: 14px; scroll-snap-align: start; border: 1px solid var(--line); }
+.shots img { height: 280px; width: auto; border-radius: 14px; scroll-snap-align: start; border: 1px solid var(--line); }
+@media (max-width: 560px) { .shots img { height: 220px; } }
 .modal-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 @media (max-width: 560px) {
   .modal-body { padding: 22px 20px 26px; }
